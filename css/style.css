@@ -1,0 +1,90 @@
+.page-title {
+    color: red;
+}
+
+h2[class=subtitle] {
+    color: dodgerblue;
+}
+
+h2#Contact-Us {
+    color: tomato;
+}
+body {
+    background: white;
+}
+
+h2 {
+    color: blue;
+}
+
+h2#subtitle1 {
+    color: green;
+}
+
+h2:hover {
+    color: gray;
+}
+/*
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: orange;
+}
+
+li:nth-child(n) {
+    color: steelblue;
+}*/
+
+/*
+li:only-child {
+    color: palegoldenrod;
+}
+*/
+
+td:only-child {
+    color: purple;
+}
+
+
+/*
+a#google-link {
+    color: blue;
+}
+
+a#google-link:visited {
+     color: red;
+}
+*/
+/*a link after h2*/
+h2 + a {
+    color: tomato ;
+}
+
+/* every button is follows or after a textarea  in same parents */
+textarea ~ button {
+   color: purple;
+}
+
+/*every li inside ul  directly div*/
+
+ul > li {
+    color: blue;
+}
+/* every li that belong to ul*/
+ul li {
+    color: orange;
+}
+
+/*every source images from the same folder*/
+img[src*="../images/"] {
+
+    border: 3px solid black;
+}
+/**/
+h2[class~="article-subtitle"] {
+
+    background: green;
+}
+
+
