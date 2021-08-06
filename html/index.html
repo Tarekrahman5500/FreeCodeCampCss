@@ -2,47 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Test Website</title>
 </head>
 <body>
-<h1 class="page-title">Test Website</h1>
+<h1 id="page-title">Test Website</h1>
 
-<p>Lorem ipsum dolor sit amet, consecrated animistic elite, sed do emus
+<p class="page-text">Lorem ipsum dolor sit amet, consecrated animistic elite, sed do emus
     temper incident ut labor et door magna alia.</p>
 
-<h2 class="subtitle article-subtitle">About Me</h2>
+<h2 class="subtitle article-subtitle" id="subtitle-animation">About Me</h2>
 
-<img src="../images/img-1.jpg" alt="">
+<img src="../images/img-1.jpg" alt="" id="about-as-img">
 
-<p>Dais ate inure dolor in reprehended in voltage veldt ease
+<p class="page-text">Dais ate inure dolor in reprehended in voltage veldt ease
     cilium door eu fugit null parity. Except saint occult cupidity non
     provident, sunt in cuppa qui official desert molt anim id est labour.
 
-    Lorem ipsum dolor sit amet, consecrated animistic elite, sed do emus
+    <span class="italics_article">Lorem ipsum dolor sit amet</span>
+    , consecrated animistic elite, sed do emus
     temper incident ut labor et door magna alia. Ut enum ad minim venial,
     quits nostrum excitation Alamo labors nisei ut aliquot ex ea commode
     consequent.
 
     Cilium door eu fugit null , parity:
-
 <ul>
-    <li>Except saint occult</li>
-    <li>cupidity non provident</li>
-    <li>sunt in cuppa.</li>
-</ul>
-<ul>
-    <li>Cupidity non provident</li>
-        <ol>
-            <li>List One</li>
-        </ol>
+    <li class="list-item">Cupidity non provident</li>
+    <ol>
+        <li class="list-item">List One</li>
+    </ol>
 </ul>
 
-<h2 class="subtitle" id="subtitle1" style="color: steelblue">Services</h2>
+<h2 class="subtitle">Services</h2>
 
-<a href="https://www.google.com" id="google-link">Click to Google</a>
+<a href="https://www.google.com" class="link">Click to Google</a>
 
-<table border="1">
+<table border="1" class="side-table">
     <thead>
     <tr>
         <td>Lorem</td>
@@ -66,21 +65,87 @@
 </table>
 
 
-<img src="../images/img-2.jpg" alt="">
+<!--<img src="../images/img-2.jpg" alt="">-->
+<div class="service-images"></div>
+<div class="container">
+    <div class="container-item"
+         style="order: 3;
+        flex: 5 1 100px;
+        align-self: auto;
+        ">A
+    </div>
+    <div class="container-item"
+         style="order: 2;
+         /* flex: grow, shrink, basic;*/
+        flex: 1 5 100px;
+        align-self: auto;
+        ">B
+    </div>
+    <div class="container-item"
+         style="order: 0;
+         flex: 3 1 100px;
+         align-self: auto;
+         ">C
+    </div>
+    <div class="container-item"
+         style="order: 1;
+        flex: 1 1 100px;
+        align-self: auto;
+        ">D
+    </div>
+    <div class="container-item"
+         style="order: 2;
+        flex: 1 1 100px;
+        align-self: auto;
+       ">E
+    </div>
+</div>
 
-<h2 id="Contact-Us">Contact Us</h2>
+<div class="grid-container">
+    <div class="grid-item"
+         style="
+      background: rgb(255, 150 ,150);
+      /*grid-column: 1 / span 2;
+      grid-row: 1 / span 2;*/
+      grid-area: 2 / 1 / span 2 / span 3;
+    ">1
+    </div>
+    <div class="grid-item"
+         style="
+      background: rgb(170, 255 ,140);
+      ">2
+    </div>
+    <div class="grid-item"
+         style="
+      background: rgb(222, 132 ,255);">3
+    </div>
+    <div class="grid-item"
+         style="
+      background: rgb(255, 207 ,119);">4
+    </div>
+    <div class="grid-item"
+         style="
+      background: rgb(140, 210 ,255);">5
+    </div>
+    <div class="grid-item"
+         style="
+      background: rgb(152,155,170);">6
+    </div>
+</div>
+
+<h2 class="subtitle">Contact Us</h2>
 
 <form>
     <label>
-        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Full Name" class="form-input">
     </label>
     <label>
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" class="form-input">
     </label>
     <label>
         <textarea></textarea>
     </label>
-    <button>Submit</button>
+    <button class="submit-button">Submit</button>
 
 </form>
 </body>

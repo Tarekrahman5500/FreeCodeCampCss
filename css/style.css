@@ -1,90 +1,162 @@
-.page-title {
-    color: red;
-}
 
-h2[class=subtitle] {
-    color: dodgerblue;
-}
-
-h2#Contact-Us {
-    color: tomato;
-}
 body {
-    background: white;
+    background: linear-gradient(rgba(211, 211, 211, 1.0), rgba(211, 211, 211, 0.4));
+    font-size: 1.25em;
+    text-align: justify-all;
+    font-family: "Roboto", sans-serif;
 }
 
-h2 {
-    color: blue;
+h1#page-title {
+    color: rgb(17, 112, 158);
+
 }
 
-h2#subtitle1 {
-    color: green;
+.subtitle {
+    color: rgb(29, 60, 82);
 }
 
-h2:hover {
-    color: gray;
-}
-/*
-li:first-child {
-    color: red;
-}
-li:last-child {
-    color: orange;
+div.service-images {
+    margin-top: 2em;
+    height: 400px;
+    width: 70vw;
+    /* background: linear-gradient(215deg, rgba(59, 70, 224, 0.8), rgba(23, 105, 222, 0.7));*/
+    background: radial-gradient(circle, rgba(106, 95, 219, 0.8) 20%, rgba(2, 5, 26, 0.7) 40%);
+    /* border: size ,style, color;*/
+    border: 2px solid rgb(187, 27, 85);
+
 }
 
-li:nth-child(n) {
-    color: steelblue;
-}*/
+.link {
+    text-decoration: underline;
 
-/*
-li:only-child {
-    color: palegoldenrod;
-}
-*/
-
-td:only-child {
-    color: purple;
 }
 
-
-/*
-a#google-link {
-    color: blue;
+.italics_article {
+    font-style: italic;
 }
 
-a#google-link:visited {
-     color: red;
-}
-*/
-/*a link after h2*/
-h2 + a {
-    color: tomato ;
-}
-
-/* every button is follows or after a textarea  in same parents */
-textarea ~ button {
-   color: purple;
+img#about-as-img {
+    height: 300px;
+    width: 50%;
+    border: 2px solid rgb(187, 27, 85);
+    /* padding: top right bottom left;*/
+    /*  margin: 2.85em;*/
+    /*padding:  1em 2.8em 0.3125em 0;*/
+    margin: 5em 2.85em;
+    float: right;
 }
 
-/*every li inside ul  directly div*/
+.side-table {
+    display: inline-block;
 
-ul > li {
-    color: blue;
-}
-/* every li that belong to ul*/
-ul li {
-    color: orange;
 }
 
-/*every source images from the same folder*/
-img[src*="../images/"] {
+div.container {
+    background-color: rgb(250, 250, 250);
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
-    border: 3px solid black;
+    align-items: center;
 }
-/**/
-h2[class~="article-subtitle"] {
 
-    background: green;
+div.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 1.5625em;
+    text-align: center;
+    width: 70px;
+    line-height: 50px;
+    margin: 10px;
 }
+
+div.grid-container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 500px;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto;
+    /* justify-content: space-around;
+     align-content: space-around;*/
+    /* row column;*/
+    /* grid-gap: 300px 150px;*/
+}
+
+.grid-item {
+    color: black;
+    font-size: 1.6em;
+    text-align: center;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.submit-button {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+    /* transform:rotate(-57deg);*/
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: rgb(147, 187, 255);
+    padding: 20px 30px;
+
+}
+
+input, textarea {
+    display: block;
+    margin: 10px;
+
+
+}
+
+#subtitle-animation {
+   /* animation-name: transition-element;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;*/
+    -webkit-animation: transition-element 4s linear 0s 1 alternate-reverse;
+    -moz-animation: transition-element 4s linear 0s 1 alternate-reverse;
+    -o-animation: transition-element 4s linear 0s 1 alternate-reverse;
+
+}
+
+/*animation*/
+@keyframes transition-element {
+
+   0% {
+       color: red;
+       transform: translate(0px, 0px);
+   }
+    50% {
+        color: darkcyan;
+        transform: translate(10px, 10px);
+    }
+    100% {
+        color: dodgerblue;
+        transform: translate(20px, 20px);
+    }
+}
+
+
+
+
+
+
 
 
