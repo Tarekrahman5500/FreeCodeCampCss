@@ -1,0 +1,114 @@
+/*
+
+ background: linear-gradient(rgba(211, 211, 211, 1.0), rgba(211, 211, 211, 0.4));
+
+*/
+
+body {
+    background: linear-gradient(rgba(211, 211, 211, 0.4) 20%, rgba(211, 211, 211, 1.0) 80%);
+}
+
+.content {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.sidebar {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    transition: 500ms all;
+}
+
+img:hover {
+    height: 250px;
+    width: 500px;
+}
+
+div#main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 50px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+li {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sidebar {
+    background: rgba(30, 110, 67, 0.7);;
+}
+
+.subtitle {
+    color: rgb(29, 60, 82);
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid > img {
+    margin: 10px;
+}
+
+#image-1 {
+    float: right;
+    margin: 15px;
+    height: 300px;
+}
+
+.post {
+    border: 2px solid rgba(30, 110, 67, 1.0);
+    margin: 10px;
+}
+
+.post > h2 {
+    margin-left: 5px;
+}
+
+.post-text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.post > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgba(20, 71, 205, 0.94);
+    transition: 0.5s color;
+}
+
+.post > a:hover {
+    color: rgb(165, 67, 105);
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
