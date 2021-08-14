@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom:1em;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    color: #1792d2;
+}
+
+a:hover, a:focus {
+    color: #143774;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.site-header {
+
+    flex-direction: row;
+}
+
+/*h1 subtitle*/
+.subtitle {
+    font-weight: 700;
+    color: rgba(2, 5, 26, 0.7);
+    font-size: .75rem;
+    margin: 0;
+    text-transform:capitalize;
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more, .article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.article-read-more:hover, .article-info:focus {
+    color: #143774;
+    text-decoration: underline;
+
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.current-page {
+    color: green;
+    border-bottom: 1px solid midnightblue;
+}
+
+.current-page:hover, .current-page:focus {
+    color: rgba(225, 225, 255, 0.99);
+    pointer-events: none;
+}
+
+.article-featured {
+    border-bottom: 1px solid gray;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+header {
+    background: rgba(149, 103, 103, 0.9);
+    padding: 2em 0;
+    margin-bottom: 3em;
+    text-align: start;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+nav ul li {
+
+    /*   margin-left: 2em;*/
+    margin: .5em 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(14, 87, 156, 1.0);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .25em 0;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: rgba(187, 27, 85, 0.85);
+}
+
+.side-bar-widget {
+    border: 20px solid #efefef;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+.widget-title, .widget-recent-post-title {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.widget-recent-post-title {
+    color: #143774;
+}
+
+.widget-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-images {
+    order: -1;
+}
+
+footer {
+    background: #143774;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: center;
+    padding: 3em;
+}
+#menu-btn,  #menu-menu {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 20px;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+@media (min-width: 675px) {
+    .container-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+
+    nav ul {
+
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+
+        margin-left: 2em;
+    }
+
+    #menu-btn, #menu-icon, #menu-menu {
+        display: none;
+    }
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-images {
+        order: -2;
+        min-height: 250px;
+        object-fit: cover;
+        /* object-position: left;*/
+    }
+
+    .article-info {
+        order: -1;
+    }
+
+    .article-featured {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/*@media (min-width :500px) {
+
+    .article-recent-main {
+        margin-top: -2.5em;
+    }
+
+    .article-info {
+        text-align: right;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+

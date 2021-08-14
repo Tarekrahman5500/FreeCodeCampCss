@@ -1,0 +1,131 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Roboto', serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, strong {
+    margin: 5px;
+    font-weight: 900;
+}
+
+p {
+    margin: 5px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+h2#section-h2 {
+    font-size: 3rem;
+    /*margin-bottom: 1em if font-size is 3rem so margin-bottom is 3em*/
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgb(45, 143, 231);
+}
+
+a {
+    color: rgba(187, 27, 85, 0.85);
+}
+
+a:hover, a:focus {
+    color: rgba(198, 180, 25, 0.93);
+}
+
+.container {
+    width: 90%;
+    max-width: 620px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 0, 255, 0.93);
+}
+
+header {
+    background: rgba(15, 80, 205, 0.8);
+    padding: 45px 0;
+    color: rgba(0, 0, 0, 0.98);
+    text-align: center;
+}
+
+section {
+    padding: 45px 0;
+}
+
+.section-one {
+    background: #2e354f;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.section-two {
+    background: #2e354f;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.btn {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-white {
+    color: rgba(255, 255, 255, 0.96);
+    background: dodgerblue;
+}
+
+.btn-accent {
+    color: rgba(2, 5, 26, 0.7);
+    background: dodgerblue;
+}
+
+.button {
+    display: inline-block;
+    background: rgba(255, 230, 0, 0.93);
+    color: rgba(2, 5, 26, 0.7);
+    padding: .5em 1.255em
+    /*em is relative to the font-size of this element*/;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.button:hover {
+    background: rgba(255, 165, 0, 0.97);
+}
+
+.btn-big {
+    font-size: 1.5rem;
+
+}
+
+.btn-small {
+    font-size: .75rem;
+
+}
+
+ul > li {
+    /*nem = n X parents font-size*/
+    font-size: 1.324em;
+    color: rgba(28, 172, 87, 0.7);
+}
+
