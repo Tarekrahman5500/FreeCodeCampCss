@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/flex.css">
     <title>Title</title>
 </head>
 <body>
+<script type="text/javascript">
+
+    function toggle_visibility(id) {
+        const e = document.getElementById(id);
+        if (e.style.display === 'block') {
+            e.style.display = 'none';
+            e.style.transition = 'all 0.5s';
+        } else
+            e.style.display = 'block';
+    }
+
+</script>
 <header>
     <div class="container container-flex">
         <div class="site-header">
@@ -15,7 +28,12 @@
             <p class="subtitle">A blog exploring minimalism in life</p>
         </div>
         <nav>
-            <ul>
+            <input class="menu-btn" type="checkbox" id="menu-btn" onclick="toggle_visibility('menu');"/>
+            <label class="menu-icon" for="menu-btn">
+                <i class="fa fa-bars" id="menu-icon"></i>
+                <i class="fa fa-times" id="menu-menu"></i>
+            </label>
+            <ul id="menu">
                 <li><a href="flex.html">Home</a></li>
                 <li><a href="about.html" class="current-page">About</a></li>
                 <li><a href="recent_post.html">Recent Posts</a></li>

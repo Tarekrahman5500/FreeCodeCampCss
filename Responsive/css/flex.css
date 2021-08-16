@@ -131,9 +131,10 @@ header {
     text-align: start;
 }
 
+
 nav ul {
     list-style: none;
-    display: flex;
+    display: none;
     padding: 0;
     flex-direction: column;
     justify-content: center;
@@ -201,20 +202,18 @@ footer {
     text-align: center;
     padding: 3em;
 }
-#menu-btn,  #menu-menu {
+
+#menu-btn, #menu-menu {
     display: none;
 }
 
-.menu-icon {
-    font-size: 20px;
-    float: left;
-    line-height: 30px;
-    margin-right: 10px;
-    text-align: left;
+#menu-btn:checked ~ ul {
+   display: none;
 }
 
 @media (min-width: 675px) {
     .container-flex {
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -230,7 +229,7 @@ footer {
     }
 
     nav ul {
-
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
@@ -276,16 +275,6 @@ footer {
 }
 
 
-/*@media (min-width :500px) {
-
-    .article-recent-main {
-        margin-top: -2.5em;
-    }
-
-    .article-info {
-        text-align: right;
-    }
-}*/
 
 
 
